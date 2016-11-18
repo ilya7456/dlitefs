@@ -1,0 +1,10 @@
+config DLITE_FS
+	tristate "dlitefs wrapped file system (EXPERIMENTAL)"
+	help
+	  dlitefs is a stackable file system which simply passes its
+	  operations to the lower layer, with a few modifications.
+		file ownership is stored in xattrs of the real file and
+		translated via dlitefs, this allows filesystems shared,
+		for example, from a host to a virtual machine, to preserve
+		correct permissions in the host, while still displaying
+		the expected permissions in the virtual machine.
