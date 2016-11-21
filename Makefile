@@ -12,7 +12,7 @@ MODDESTDIR := /lib/modules/$(KVER)/kernel/fs
 
 obj-$(CONFIG_DLITE_FS) := dlite.o
 
-dlite-y += dentry.o file.o inode.o main.o super.o lookup.o mmap.o
+dlite-y += dentry.o file.o inode.o main.o super.o lookup.o mmap.o unqlite.o
 
 all: modules
 
